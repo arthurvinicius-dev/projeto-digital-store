@@ -1,0 +1,25 @@
+# dependências e build
+node_modules
+dist
+dist-ssr
+coverage
+
+# segredos e arquivos locais
+.env
+.env.*
+!.env.example
+*.local
+
+# Vercel (guarda ids do projeto)
+.vercel
+
+# logs
+logs
+*.log
+npm-debug.log*
+
+# editor e sistema
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store

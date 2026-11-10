@@ -1,0 +1,9 @@
+node_modules
+dist
+coverage
+.vercel
+package-lock.json
+public
+doc
+.claude
+*.md
