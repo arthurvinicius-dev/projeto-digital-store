@@ -1,3 +1,4 @@
+import Choice from './components/Choice'
 import Button from './components/Button'
 import Logo from './components/Logo'
 
@@ -23,6 +24,20 @@ export default function App() {
         <Button variant="shop" disabled>
           Comprar
         </Button>
+      </div>
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'flex-start',
+          gap: 10,
+          marginTop: 24,
+        }}
+      >
+        <Choice label="Adidas" value="adidas" />
+        <Choice label="Nike" defaultChecked />
+        <Choice type="radio" name="estado" label="Novo" defaultChecked />
+        <Choice type="radio" name="estado" label="Usado" />
       </div>
     </main>
   )

@@ -1,0 +1,38 @@
+.choice {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: var(--text-x-small);
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.25px;
+  color: var(--dark-gray-2);
+  cursor: pointer;
+}
+
+.input {
+  appearance: none;
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.checkbox {
+  border-radius: 2px;
+  background-image: url('../../assets/checkbox.svg');
+}
+
+.checkbox:checked {
+  background-image: url('../../assets/checkbox-checked.svg');
+}
+
+.radio {
+  border-radius: 50%;
+  background-image: url('../../assets/radio.svg');
+}
+
+.radio:checked {
+  background-image: url('../../assets/radio-checked.svg');
+}
