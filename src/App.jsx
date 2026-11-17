@@ -12,15 +12,11 @@ export default function App() {
 
       <div style={{ display: 'flex', gap: 16, marginTop: 24 }}>
         <Button>Primary</Button>
-        <Button variant="secondary">
-          Secondary
-        </Button>
-        <Button variant="shop">
-          Comprar
-        </Button>
+        <Button variant="secondary">Secondary</Button>
+        <Button variant="shop">Comprar</Button>
       </div>
-      <div style={{ display: 'flex', gap: 16, marginTop: 16}}>
-        <Button>Primary</Button>
+      <div style={{ display: 'flex', gap: 16, marginTop: 16 }}>
+        <Button disabled>Primary</Button>
         <Button variant="secondary" disabled>
           Secondary
         </Button>
