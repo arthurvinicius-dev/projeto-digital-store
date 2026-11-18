@@ -1,0 +1,21 @@
+.title {
+  margin-bottom: 28px;
+  font-size: var(--text-medium);
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  line-height: 38px;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
