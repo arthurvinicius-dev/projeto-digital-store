@@ -1,3 +1,4 @@
+import Input from './components/Input'
 import Choice from './components/Choice'
 import Button from './components/Button'
 import Logo from './components/Logo'
@@ -38,6 +39,14 @@ export default function App() {
         <Choice label="Nike" defaultChecked />
         <Choice type="radio" name="estado" label="Novo" defaultChecked />
         <Choice type="radio" name="estado" label="Usado" />
+      </div>
+      <div style={{ display: 'grid', gap: 20, maxWidth: 523, marginTop: 24 }}>
+        <Input label="Login *" placeholder="Insira seu login ou email" />
+        <Input label="Senha *" type="password" placeholder="Insira sua senha" />
+        <Input
+          aria-label="Pesquisar produto"
+          placeholder="Pesquisar produto..."
+        />
       </div>
     </main>
   )
