@@ -1,11 +1,9 @@
-import SearchBar from '../../components/SearchBar'
+import Header from '../../components/Header'
 
 export default function Layout({ children }) {
   return (
     <>
-      <div className="container">
-        <SearchBar />
-      </div>
+      <Header />
       <main className="container">{children}</main>
     </>
   )
