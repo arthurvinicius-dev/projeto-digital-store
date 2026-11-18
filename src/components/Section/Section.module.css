@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.left {
+  justify-content: space-between;
+}
+
+.center {
+  justify-content: center;
+}
+
+.title {
+  font-size: var(--text-large);
+  font-weight: 700;
+  line-height: 38px;
+  color: var(--dark-gray-2);
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: var(--text-medium);
+  line-height: 34px;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
