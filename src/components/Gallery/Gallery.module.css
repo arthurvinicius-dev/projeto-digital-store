@@ -46,6 +46,27 @@
 .next {
   right: 16px;
 }
+.thumbs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 117px);
+  justify-content: space-between;
+  gap: 28px;
+  margin-top: 20px;
+}
+
+.thumb {
+  height: 95px;
+  padding: 0;
+  border: none;
+  border-radius: var(--radius, 0);
+  overflow: hidden;
+  background: none;
+  cursor: pointer;
+}
+
+.thumb[aria-current='true'] {
+  border: 2px solid var(--primary);
+}
 
 @media (prefers-reduced-motion: reduce) {
   .track {

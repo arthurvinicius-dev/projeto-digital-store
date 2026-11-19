@@ -8,6 +8,7 @@ export default function Gallery({
   width,
   height,
   radius,
+  showThumbs = false,
   className = '',
 }) {
   const [current, setCurrent] = useState(0)
@@ -57,6 +58,23 @@ export default function Gallery({
           <img src={arrowRight} alt="" width={14} height={24} />
         </button>
       </div>
+
+      {showThumbs && (
+        <div className={styles.thumbs}>
+          {images.map((image, index) => (
+            <button
+              key={image.src}
+              type="button"
+              className={styles.thumb}
+              aria-label={`Mostrar imagem ${index + 1}`}
+              aria-current={index === current}
+              onClick={() => setCurrent(index)}
+            >
+              <img src={image.src} alt="" className={styles.image} />
+            </button>
+          ))}
+        </div>
+      )}
     </div>
   )
 }
