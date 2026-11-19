@@ -1,0 +1,35 @@
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid var(--light-gray-2);
+  background: var(--white);
+  font-size: var(--text-large);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--dark-gray-2);
+  cursor: pointer;
+}
+
+.square {
+  min-width: 46px;
+  height: 46px;
+  padding-inline: 10px;
+}
+
+.circle {
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+}
+
+.option[aria-pressed='true'] {
+  border: 2px solid var(--primary);
+}

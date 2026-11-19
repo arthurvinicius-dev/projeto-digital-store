@@ -1,0 +1,77 @@
+.buyBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.name {
+  font-size: var(--h3);
+  font-weight: 700;
+  line-height: 36px;
+  color: var(--dark-gray);
+}
+
+.reference {
+  margin-top: 10px;
+  font-size: var(--text-tiny);
+  color: var(--dark-gray-3);
+}
+
+.review {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: var(--text-x-small);
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0 10px;
+  border-radius: var(--radius);
+  background: var(--warning);
+  font-weight: 700;
+  color: var(--white);
+}
+
+.rating {
+  color: var(--light-gray);
+}
+
+.prices {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.price {
+  font-size: var(--h3);
+  font-weight: 700;
+  color: var(--dark-gray-2);
+}
+
+.oldPrice {
+  font-size: var(--text-small);
+  color: var(--light-gray-2);
+}
+
+.subtitle {
+  font-size: var(--text-x-small);
+  font-weight: 700;
+  color: var(--dark-gray-3);
+}
+
+.description {
+  margin-top: 10px;
+  font-size: var(--text-x-small);
+  color: var(--dark-gray-2);
+}
+
+.buy {
+  width: 220px;
+  font-size: var(--text-small);
+  text-transform: uppercase;
+  color: var(--white);
+}
