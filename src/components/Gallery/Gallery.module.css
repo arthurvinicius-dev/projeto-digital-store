@@ -7,7 +7,7 @@
   position: relative;
   overflow: hidden;
   aspect-ratio: var(--ratio);
-  border-radius: var(--radius, 0);
+  border-radius: var(--gallery-radius, 0);
 }
 
 .track {
@@ -58,7 +58,7 @@
   height: 95px;
   padding: 0;
   border: none;
-  border-radius: var(--radius, 0);
+  border-radius: var(--gallery-radius, 0);
   overflow: hidden;
   background: none;
   cursor: pointer;

@@ -18,7 +18,7 @@ export default function Gallery({
   const sizes = {
     '--width': `${width}px`,
     '--ratio': `${width} / ${height}`,
-    '--radius': radius,
+    '--gallery-radius': radius,
   }
 
   return (
