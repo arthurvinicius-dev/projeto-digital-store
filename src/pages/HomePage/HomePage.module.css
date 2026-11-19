@@ -20,3 +20,9 @@
   height: auto;
   border-radius: var(--radius);
 }
+
+@media (max-width: 768px) {
+  .collections {
+    grid-template-columns: 1fr;
+  }
+}

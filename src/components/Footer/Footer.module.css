@@ -52,3 +52,16 @@
   line-height: 24px;
   text-align: center;
 }
+
+@media (max-width: 1024px) {
+  .top {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .top {
+    grid-template-columns: 1fr;
+  }
+}

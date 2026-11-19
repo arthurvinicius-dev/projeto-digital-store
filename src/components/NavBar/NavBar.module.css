@@ -33,3 +33,10 @@
   border-radius: 2px;
   background: var(--primary);
 }
+
+@media (max-width: 768px) {
+  .list {
+    flex-wrap: wrap;
+    gap: 8px 24px;
+  }
+}

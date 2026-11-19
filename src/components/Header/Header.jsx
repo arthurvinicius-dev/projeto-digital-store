@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div className={`container ${styles.top}`}>
-        <Link to="/">
+        <Link to="/" className={styles.logo}>
           <Logo />
         </Link>
         <SearchBar className={styles.search} />

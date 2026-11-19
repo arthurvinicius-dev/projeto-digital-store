@@ -11,7 +11,8 @@
 }
 
 .search {
-  width: 559px;
+  flex: 0 1 559px;
+  min-width: 0;
   margin-left: 31px;
 }
 
@@ -44,4 +45,39 @@
 
 .cart {
   margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 24px 0;
+  }
+
+  .top {
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .logo img {
+    width: 140px;
+    height: auto;
+  }
+
+  .search {
+    order: 1;
+    flex-basis: 100%;
+    margin-left: 0;
+  }
+
+  .signup {
+    display: none;
+  }
+
+  .login {
+    margin-left: auto;
+  }
+
+  .cart {
+    margin-left: 0;
+  }
 }
