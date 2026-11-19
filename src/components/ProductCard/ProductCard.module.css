@@ -1,0 +1,43 @@
+.card {
+  display: block;
+  width: 292px;
+  text-decoration: none;
+}
+
+.image {
+  margin-bottom: 18px;
+  border-radius: 4px;
+  box-shadow: 6px 16px 30px rgb(105 98 98 / 5%);
+  object-fit: cover;
+}
+
+.category {
+  font-size: var(--text-tiny);
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--light-gray);
+}
+
+.name {
+  font-size: var(--text-large);
+  line-height: 38px;
+  color: var(--dark-gray-2);
+}
+
+.prices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: var(--text-large);
+  line-height: 38px;
+}
+
+.oldPrice {
+  color: var(--light-gray);
+  text-decoration-thickness: 1px;
+}
+
+.price {
+  font-weight: 700;
+  color: var(--dark-gray);
+}
