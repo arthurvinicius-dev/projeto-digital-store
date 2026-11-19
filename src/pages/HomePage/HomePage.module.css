@@ -1,0 +1,10 @@
+.gallery {
+  margin-inline: auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  padding-block: 38px 120px;
+}

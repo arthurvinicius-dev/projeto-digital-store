@@ -1,3 +1,7 @@
 export default function ProductListingPage() {
-  return <h1>Produtos</h1>
+  return (
+    <div className="container">
+      <h1>Produtos</h1>
+    </div>
+  )
 }

@@ -3,7 +3,7 @@ import { productImages } from '../../data/productImages'
 
 export default function ProductViewPage() {
   return (
-    <>
+    <div className="container">
       <h1>Produto</h1>
       <Gallery
         images={productImages}
@@ -12,6 +12,6 @@ export default function ProductViewPage() {
         radius="4px"
         showThumbs
       />
-    </>
+    </div>
   )
 }
