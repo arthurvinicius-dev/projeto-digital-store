@@ -38,3 +38,27 @@ test('a seta da esquerda volta para a imagem anterior', async () => {
   expect(screen.getByRole('img', { name: 'Imagem 1 de 3' })).toBeInTheDocument()
   expect(setas().anterior).toBeDisabled()
 })
+
+test('sem showThumbs, não mostra miniaturas', () => {
+  render(<Gallery images={images} />)
+  expect(
+    screen.queryByRole('button', { name: 'Mostrar imagem 1' }),
+  ).not.toBeInTheDocument()
+})
+
+test('com showThumbs, mostra uma miniatura por imagem, a primeira marcada', () => {
+  render(<Gallery images={images} showThumbs />)
+  const miniaturas = screen.getAllByRole('button', { name: /Mostrar imagem/ })
+  expect(miniaturas).toHaveLength(3)
+  expect(miniaturas[0]).toHaveAttribute('aria-current', 'true')
+  expect(miniaturas[1]).toHaveAttribute('aria-current', 'false')
+})
+
+test('clicar numa miniatura troca a imagem e a miniatura marcada', async () => {
+  render(<Gallery images={images} showThumbs />)
+  const terceira = screen.getByRole('button', { name: 'Mostrar imagem 3' })
+  await userEvent.click(terceira)
+  expect(screen.getByRole('img', { name: 'Imagem 3 de 3' })).toBeInTheDocument()
+  expect(terceira).toHaveAttribute('aria-current', 'true')
+  expect(setas().proxima).toBeDisabled()
+})
