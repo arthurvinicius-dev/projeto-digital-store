@@ -1,3 +1,5 @@
+import Gallery from '../../components/Gallery'
+import { homeSlides } from '../../data/homeSlides'
 import ProductListing from '../../components/ProductListing'
 import Section from '../../components/Section'
 import { products } from '../../data/products'
@@ -6,6 +8,7 @@ export default function HomePage() {
   return (
     <>
       <h1>Home</h1>
+      <Gallery images={homeSlides} width="1440" height="681" />
       <Section
         title="Produtos em alta"
         link={{ text: 'Ver todos', href: '/products' }}
