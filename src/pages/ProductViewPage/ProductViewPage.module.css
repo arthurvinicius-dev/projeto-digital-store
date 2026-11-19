@@ -1,0 +1,20 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding-block: 40px 120px;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: 700px 1fr;
+  align-items: start;
+  gap: 40px;
+}
+
+.optionTitle {
+  margin-bottom: 10px;
+  font-size: var(--text-x-small);
+  font-weight: 700;
+  color: var(--light-gray);
+}
