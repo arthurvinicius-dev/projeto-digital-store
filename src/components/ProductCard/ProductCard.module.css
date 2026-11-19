@@ -1,10 +1,13 @@
 .card {
   display: block;
-  width: 292px;
+  width: 100%;
+  max-width: 292px;
   text-decoration: none;
 }
 
 .image {
+  width: 100%;
+  height: auto;
   margin-bottom: 18px;
   border-radius: 4px;
   box-shadow: 6px 16px 30px rgb(105 98 98 / 5%);
@@ -40,4 +43,12 @@
 .price {
   font-weight: 700;
   color: var(--dark-gray);
+}
+
+@media (max-width: 768px) {
+  .name,
+  .prices {
+    font-size: var(--text-small);
+    line-height: 24px;
+  }
 }

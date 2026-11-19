@@ -18,3 +18,9 @@
   font-weight: 700;
   color: var(--light-gray);
 }
+
+@media (max-width: 1024px) {
+  .product {
+    grid-template-columns: 1fr;
+  }
+}
