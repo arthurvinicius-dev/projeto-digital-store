@@ -8,3 +8,15 @@
   gap: 100px;
   padding-block: 38px 120px;
 }
+
+.collections {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.collection {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+}
